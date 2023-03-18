@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Verduleria.Models.Producto>
+
+
+<div id="gallary" class="text-center bg-dark text-light has-height-md middle-items wow fadeIn">
+    <h2 class="section-title">NUESTROS PRODUCTOS</h2>
+</div>
+<div class="gallary row">
+    @foreach (var producto in ViewData["Productos"] as IEnumerable<Verduleria.Models.Producto>)
+    {
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="~/assets/imgs/gallary-1.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+            <a href="#" class="gallary-overlay">
+                <p>
+                    @Html.DisplayFor(modelItem => producto.Nombre)
+                </p>
+                <br>
+                <i class="gallary-icon ti-plus"></i>
+            </a>
+        </div>
+    }
+</div>
