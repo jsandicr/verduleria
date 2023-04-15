@@ -5,57 +5,72 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Verduleria
 build_property.RootNamespace = Verduleria
-build_property.ProjectDir = C:\Users\micha\Documents\Universidad Fidélitas - Archivos\7mo Cuatrimestre\Programacion Avanzada\verduleria\Verduleria\
+build_property.ProjectDir = D:\Q7\Programacion_Web\Proyecto\Verduleria\verduleria\Verduleria\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\micha\Documents\Universidad Fidélitas - Archivos\7mo Cuatrimestre\Programacion Avanzada\verduleria\Verduleria
+build_property.MSBuildProjectDirectory = D:\Q7\Programacion_Web\Proyecto\Verduleria\verduleria\Verduleria
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/Index.cshtml]
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/Promociones.cshtml]
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Admin/Promociones.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvbW9jaW9uZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Home/Index.cshtml]
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Home/Privacy.cshtml]
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Shared/Error.cshtml]
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Shared/Blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEJsb2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Shared/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbnRhY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Shared/Gallary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEdhbGxhcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Shared/Reviews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFJldmlld3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Verduleria/Index.cshtml]
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Verduleria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyZHVsZXJpYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/_ViewImports.cshtml]
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/_ViewStart.cshtml]
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Shared/_AdminLayout.cshtml]
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-d9r58ntgl6
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Shared/_Layout.cshtml]
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xwsj50v0pi

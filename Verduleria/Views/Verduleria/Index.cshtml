@@ -39,18 +39,18 @@ else
     </div>
 
     <!--  gallary Section  -->
-    @await Html.PartialAsync("Gallary", item)
+    @await Html.PartialAsync("Gallary", ViewData["Productos"])
 
     <!-- BLOG Section  -->
-    @await Html.PartialAsync("Blog", item)
+    @await Html.PartialAsync("Blog", ViewData["Promociones"])
 
     <!-- REVIEWS Section  -->
-    @await Html.PartialAsync("Review", item)
+    @await Html.PartialAsync("Review")
 
 
 
     <!-- CONTACT Section  -->
-    @await Html.PartialAsync("Contact", item)
+    @await Html.PartialAsync("Contact")
 
     <!-- page footer  -->
     <div class="container-fluid bg-dark text-light has-height-md middle-items border-top text-center wow fadeIn">
