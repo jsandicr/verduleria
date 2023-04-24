@@ -5,17 +5,28 @@
     <h2 class="section-title">NUESTROS PRODUCTOS</h2>
 </div>
 <div class="gallary row">
-    @foreach (var producto in ViewData["Productos"] as IEnumerable<Verduleria.Models.Producto>)
-    {
-        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-            <img src="~/assets/imgs/gallary-1.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
-            <a href="#" class="gallary-overlay">
-                <p>
-                    @Html.DisplayFor(modelItem => producto.Nombre)
-                </p>
-                <br>
-                <i class="gallary-icon ti-plus"></i>
-            </a>
+    @if(Model.Count() > 0){
+        @foreach (var producto in ViewData["Productos"] as IEnumerable<Verduleria.Models.Producto>)
+        {
+            <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+                <img src="~/assets/imgs/gallary-1.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+                <a class="gallary-overlay" asp-action="PostCarrito" asp-controller="Verduleria" asp-route-IdProducto="@producto.Id">
+                    <h3>
+                        @Html.DisplayFor(modelItem => producto.Nombre)
+                    </h3>
+                    <p>
+                        @Html.DisplayFor(modelItem => producto.Descripcion)
+                    </p>
+                    <p>
+                        ₡@Html.DisplayFor(modelItem => producto.Precio)
+                    </p>
+                    <i class="gallary-icon ti-plus"></i>
+                </a>
+            </div>
+        }
+    }else{
+        <div class="w-100 text-center no-disponible">
+            <p>De momento no hay productos disponibles</p>
         </div>
     }
 </div>

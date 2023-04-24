@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var detalles = ViewData["DetalleCarrito"] as IEnumerable<Verduleria.Models.DetalleCarrito>;
+    var cantidad = detalles.Count();
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -8,9 +12,11 @@
     <link rel="stylesheet" href="~/assets/vendors/themify-icons/css/themify-icons.css">
 
     <link rel="stylesheet" href="~/assets/vendors/animate/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Bootstrap + FoodHut main styles -->
     <link rel="stylesheet" href="~/assets/css/foodhut.css">
+    <link rel="stylesheet" href="~/css/carrito.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <header>
@@ -38,8 +44,10 @@
                     <span class="brand-txt">Verduleria</span>
                 </a>
                 <ul class="navbar-nav second-nav">
-                    <li class="nav-item">
-                        <a id="cart" class="nav-link"><i class="fa fa-shopping-cart"></i>Carrito<span class="badge">3</span></a>
+                    <li class="nav-item cart">
+                        <a id="cart" class="nav-link"><i class="fa fa-shopping-cart"></i>Carrito
+                                <span class="badge-cart">@cantidad</span>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#testmonial">Comentarios</a>
@@ -51,45 +59,41 @@
             </div>
         </nav>
 
-        <div class="container">
+        <div class="container-card">
             <div class="shopping-cart">
                 <div class="shopping-cart-header">
-                    <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+                    <i class="fa fa-shopping-cart cart-icon"></i><span class="badge-cart">@cantidad</span>   
                     <div class="shopping-cart-total">
                         <span class="lighter-text">Total:</span>
-                        <span class="main-color-text">$2,229.97</span>
+                        <span class="main-color-text">$@ViewData["TotalCarrito"]</span>
                     </div>
                 </div> <!--end shopping-cart-header -->
 
                 <ul class="shopping-cart-items">
-                    <li class="clearfix">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
-                        <span class="item-name">Sony DSC-RX100M III</span>
-                        <span class="item-price">$849.99</span>
-                        <span class="item-quantity">Quantity: 01</span>
-                    </li>
-
-                    <li class="clearfix">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item2.jpg" alt="item1" />
-                        <span class="item-name">KS Automatic Mechanic...</span>
-                        <span class="item-price">$1,249.99</span>
-                        <span class="item-quantity">Quantity: 01</span>
-                    </li>
-
-                    <li class="clearfix">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item3.jpg" alt="item1" />
-                        <span class="item-name">Kindle, 6" Glare-Free To...</span>
-                        <span class="item-price">$129.99</span>
-                        <span class="item-quantity">Quantity: 01</span>
-                    </li>
+                    @foreach (var detalle in @detalles)
+                    {
+                        <li class="detalle">
+                            <span class="item-name">@detalle.Producto.Nombre</span>
+                            <span class="item-quantity">Cantidad: @detalle.CantidadProducto</span>
+                            <span class="item-price">$@detalle.Costo</span>
+                            @if(detalle.Editable){
+                                <a asp-action="PostCarrito" asp-controller="Verduleria" asp-route-IdProducto="@detalle.Producto.Id">
+                                    <i class="fa fa-regular fa-plus cart-icon"></i>
+                                </a>
+                                <a asp-action="RestaCarrito" asp-controller="Verduleria" asp-route-IdProducto="@detalle.Producto.Id">
+                                    <i class="fa fa-solid fa-minus cart-icon"></i>
+                                </a>
+                            }
+                        </li>
+                    }
                 </ul>
 
-                <a href="#" class="button">Checkout</a>
+                <a asp-action="Checkout" asp-controller="Verduleria" class="button button-cart">Checkout</a>
             </div> <!--end shopping-cart -->
         </div> <!--end container -->
     </header>
     <div>
-            @RenderBody()
+        @RenderBody()
     </div>
 
     <script src="~/assets/vendors/jquery/jquery-3.4.1.js"></script>

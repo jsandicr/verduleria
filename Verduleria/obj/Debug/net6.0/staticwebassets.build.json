@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fRIuwpNqkxEYjrEKNsUI8o+6Hd5psV5LHCWzzUX4df0=",
+  "Hash": "rjkksW9xpZ1H601SNdaFTAMQjayJ+JgHS95ssj7AOmg=",
   "Source": "Verduleria",
   "BasePath": "_content/Verduleria",
   "Mode": "Default",
@@ -4437,6 +4437,23 @@
       "OriginalItemSpec": "wwwroot\\css\\carrito.css"
     },
     {
+      "Identity": "D:\\Q7\\Programacion_Web\\Proyecto\\Verduleria\\verduleria\\Verduleria\\wwwroot\\css\\checkout.css",
+      "SourceId": "Verduleria",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Q7\\Programacion_Web\\Proyecto\\Verduleria\\verduleria\\Verduleria\\wwwroot\\",
+      "BasePath": "_content/Verduleria",
+      "RelativePath": "css/checkout.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\checkout.css"
+    },
+    {
       "Identity": "D:\\Q7\\Programacion_Web\\Proyecto\\Verduleria\\verduleria\\Verduleria\\wwwroot\\css\\site.css",
       "SourceId": "Verduleria",
       "SourceType": "Discovered",
@@ -4486,6 +4503,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\carrito.js"
+    },
+    {
+      "Identity": "D:\\Q7\\Programacion_Web\\Proyecto\\Verduleria\\verduleria\\Verduleria\\wwwroot\\js\\checkout.js",
+      "SourceId": "Verduleria",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Q7\\Programacion_Web\\Proyecto\\Verduleria\\verduleria\\Verduleria\\wwwroot\\",
+      "BasePath": "_content/Verduleria",
+      "RelativePath": "js/checkout.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\checkout.js"
     },
     {
       "Identity": "D:\\Q7\\Programacion_Web\\Proyecto\\Verduleria\\verduleria\\Verduleria\\wwwroot\\js\\site.js",

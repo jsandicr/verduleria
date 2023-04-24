@@ -11,7 +11,7 @@ build_property.RootNamespace = Verduleria
 build_property.ProjectDir = D:\Q7\Programacion_Web\Proyecto\Verduleria\verduleria\Verduleria\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = D:\Q7\Programacion_Web\Proyecto\Verduleria\verduleria\Verduleria
 build_property._RazorSourceGeneratorDebug = 
 
@@ -55,6 +55,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Verduleria/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyZHVsZXJpYVxDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Verduleria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyZHVsZXJpYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -74,3 +78,7 @@ build_metadata.AdditionalFiles.CssScope = b-d9r58ntgl6
 [D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xwsj50v0pi
+
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Shared/_LayoutCheckout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-qkj0ppiu10
