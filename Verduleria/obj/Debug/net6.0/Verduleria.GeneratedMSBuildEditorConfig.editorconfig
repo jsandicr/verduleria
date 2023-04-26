@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = D:\Q7\Programacion_Web\Proyecto\Verduleria\verduleria\Verduleria
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Admin/AgregarProducto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWdyZWdhclByb2R1Y3RvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Admin/EditarProducto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdGFyUHJvZHVjdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Q7/Programacion_Web/Proyecto/Verduleria/verduleria/Verduleria/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
