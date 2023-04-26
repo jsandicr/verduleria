@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Verduleria.Models.Usuario>
+@{
+    ViewData["Title"] = "Verduleria";
+    Layout = "_AdminLayout";
+}
+<!-- Navbar End -->
+@if (Model != null)
+{
+    <div class="container-fluid pt-4 px-4">
+        <div class="row g-4">
+            <div class="col-12">
+                <div class="bg-light rounded h-100 p-4">
+                    <h6 class="mb-4">Usuarios</h6>
+                    <a class="btn btn-primary" asp-action="AgregarUsuario" asp-controller="Admin">Crear nuevo</a>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        @Html.DisplayNameFor(model => model.NombreCompleto)
+                                    </th>
+                                    <th scope="col">
+                                        @Html.DisplayNameFor(model => model.Correo)
+                                    </th>
+                                    <th scope="col">
+                                        @Html.DisplayNameFor(model => model.Ubicacion)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var usuario in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => usuario.NombreCompleto)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => usuario.Correo)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => usuario.Ubicacion)
+                                        </td>
+                                        <td>
+                                            <a asp-action="EditarUsuario" asp-route-id="@usuario.Id">Editar</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<!-- Content End -->
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>

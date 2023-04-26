@@ -37,6 +37,51 @@ namespace Verduleria.Controllers
             return View(promocionList);
         }
 
+
+
+        public async Task<IActionResult> TipoProducto()
+        {
+            List<TipoProducto> tipoList = new List<TipoProducto>();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("https://localhost:7024/api/TipoProducto"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    tipoList = JsonConvert.DeserializeObject<List<TipoProducto>>(apiResponse);
+                }
+            }
+            return View(tipoList);
+        }
+
+        public async Task<IActionResult> Usuario()
+        {
+            List<Usuario> usuarioList = new List<Usuario>();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("https://localhost:7024/api/Usuario"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    usuarioList = JsonConvert.DeserializeObject<List<Usuario>>(apiResponse);
+                }
+            }
+            return View(usuarioList);
+        }
+
+        public async Task<IActionResult> Rol()
+        {
+            List<Rol> rolList = new List<Rol>();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("https://localhost:7024/api/Rol"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    rolList = JsonConvert.DeserializeObject<List<Rol>>(apiResponse);
+                }
+            }
+            return View(rolList);
+        }
+
+
         public async Task<IActionResult> AgregarProducto()
         {
             List<TipoProducto> tipos = new List<TipoProducto>();
@@ -84,7 +129,7 @@ namespace Verduleria.Controllers
                     }
                 }
                 return RedirectToAction(nameof(AgregarProducto));
-                
+
             }
             catch
             {
@@ -117,7 +162,7 @@ namespace Verduleria.Controllers
             List<SelectListItem> tiposOps = new List<SelectListItem>();
             foreach (TipoProducto tipo in tipos)
             {
-                if(tipo.Id == producto.Id)
+                if (tipo.Id == producto.Id)
                 {
                     tiposOps.Add(new SelectListItem
                     {
@@ -168,5 +213,65 @@ namespace Verduleria.Controllers
                 return RedirectToAction(nameof(EditarProducto));
             }
         }
+
+        //Agregar Promociones
+
+        public async Task<IActionResult> AgregarPromocion()
+        {
+            List<Promocion> promos = new List<Promocion>();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("https://localhost:7024/api/Promocion"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    promos = JsonConvert.DeserializeObject<List<Promocion>>(apiResponse);
+                }
+            }
+
+            List<SelectListItem> promosOps = new List<SelectListItem>();
+            foreach (Promocion promo in promos)
+            {
+                promosOps.Add(new SelectListItem
+                {
+                    Text = promo.Nombre,
+                    Value = promo.Id.ToString()
+                });
+            };
+
+            ViewData["Promociones"] = promosOps;
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AgregarPromocion(Promocion promocion)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var json = JsonConvert.SerializeObject(promocion);
+                    var data = new StringContent(json, Encoding.UTF8, "application/json");
+                    using (var httpClient = new HttpClient())
+                    {
+                        using (var response = await httpClient.PostAsync("https://localhost:7024/api/Promocion", data))
+                        {
+                            if (response.IsSuccessStatusCode)
+                            {
+                                return RedirectToAction(nameof(Index));
+                            }
+                        }
+                    }
+                }
+                return RedirectToAction(nameof(AgregarPromocion));
+
+            }
+            catch
+            {
+                return RedirectToAction(nameof(AgregarPromocion));
+            }
+        }
+
+        //Editar Promociones
+
     }
 }

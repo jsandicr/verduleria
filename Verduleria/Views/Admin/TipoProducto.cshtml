@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Verduleria.Models.TipoProducto>
+@{
+    ViewData["Title"] = "Verduleria";
+    Layout = "_AdminLayout";
+}
+<!-- Navbar End -->
+@if (Model != null)
+{
+    <div class="container-fluid pt-4 px-4">
+        <div class="row g-4">
+            <div class="col-12">
+                <div class="bg-light rounded h-100 p-4">
+                    <h6 class="mb-4">Tipo de Producto</h6>
+                    <a class="btn btn-primary" asp-action="AgregarTipoProducto" asp-controller="Admin">Crear nuevo</a>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        @Html.DisplayNameFor(model => model.Nombre)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var tipoproducto in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => tipoproducto.Nombre)
+                                        </td>
+
+                                        <td>
+                                            <a asp-action="EditarTipoProducto" asp-route-id="@tipoproducto.Id">Editar</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<!-- Content End -->
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>

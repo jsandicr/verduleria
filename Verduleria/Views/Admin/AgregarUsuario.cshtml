@@ -1,0 +1,53 @@
+﻿@model Verduleria.Models.Usuario
+@{
+    ViewData["Title"] = "Verduleria";
+    Layout = "_AdminLayout";
+}
+
+<div class="container-xxl position-relative bg-white d-flex p-0">
+    <!-- Form Start -->
+    <div class="container-fluid pt-4 px-4">
+        <div class="row g-4">
+            <form asp-action="AgregarUsuario" asp-controller="Admin" method="post" class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Nuevo Usuario</h6>
+                <label asp-for="NombreCompleto"></label>
+                <div class="input-group mb-3">
+                    <input asp-for="NombreCompleto" type="text" class="form-control" />
+                    <span asp-validation-for="NombreCompleto"></span>
+                </div>
+                <label asp-for="Correo"></label>
+                <div class="input-group mb-3">
+                    <input asp-for="Correo" type="email" class="form-control" />
+                    <span asp-validation-for="Correo"></span>
+                </div>
+                <label asp-for="Ubicacion"></label>
+                <div class="input-group mb-3">
+                    <input asp-for="Ubicacion" type="text" class="form-control" />
+                    <span asp-validation-for="Ubicacion"></span>
+                </div>
+                <div>
+                    <label>Seleccione el rol</label>
+                    @Html.DropDownList("IdRol", (IEnumerable<SelectListItem>)ViewData["Roles"], new { @class = "form-control form-select mb-3" })
+                </div>
+                <button class="btn btn-primary" type="submit">Guardar</button>
+            </form>
+        </div>
+    </div>
+    <!-- Form End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/chart/chart.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
