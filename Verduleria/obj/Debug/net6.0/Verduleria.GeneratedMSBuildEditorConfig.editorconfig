@@ -9,129 +9,141 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Verduleria
 build_property.RootNamespace = Verduleria
-build_property.ProjectDir = C:\Users\micha\Documents\Universidad Fidélitas - Archivos\7mo Cuatrimestre\Programacion Avanzada\verduleria\Verduleria\
+build_property.ProjectDir = D:\Pedro 7.0\Programación Avanzada Web\verduleria\Verduleria\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\micha\Documents\Universidad Fidélitas - Archivos\7mo Cuatrimestre\Programacion Avanzada\verduleria\Verduleria
+build_property.MSBuildProjectDirectory = D:\Pedro 7.0\Programación Avanzada Web\verduleria\Verduleria
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/AgregarProducto.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/AgregarProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWdyZWdhclByb2R1Y3RvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/AgregarPromocion.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/AgregarProductoPromocion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWdyZWdhclByb2R1Y3RvUHJvbW9jaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/AgregarPromocion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWdyZWdhclByb21vY2lvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/AgregarRol.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/AgregarRol.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWdyZWdhclJvbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/AgregarTipoProducto.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/AgregarTipoProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWdyZWdhclRpcG9Qcm9kdWN0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/AgregarUsuario.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/AgregarUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWdyZWdhclVzdWFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/EditarProducto.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/EditarProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdGFyUHJvZHVjdG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/EditarPromocion.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/EditarProductoPromocion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdGFyUHJvZHVjdG9Qcm9tb2Npb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/EditarPromocion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdGFyUHJvbW9jaW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/EditarRol.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/EditarRol.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdGFyUm9sLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/EditarTipoProducto.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/EditarTipoProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdGFyVGlwb1Byb2R1Y3RvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/EditarUsuario.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/EditarUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdGFyVXN1YXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/Index.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/Promociones.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/ProductoPromocion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdG9Qcm9tb2Npb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/Promociones.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvbW9jaW9uZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/Rol.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/Rol.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUm9sLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/TipoProducto.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/TipoProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGlwb1Byb2R1Y3RvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Admin/Usuario.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Admin/Usuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXN1YXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Home/Index.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Home/Privacy.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Shared/Blog.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Shared/Blog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEJsb2cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Shared/Contact.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Shared/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbnRhY3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Shared/Error.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Shared/Gallary.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Shared/Gallary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEdhbGxhcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Shared/Reviews.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Shared/Reviews.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFJldmlld3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Verduleria/Checkout.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Verduleria/Checkout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyZHVsZXJpYVxDaGVja291dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Verduleria/Index.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Verduleria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyZHVsZXJpYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/_ViewImports.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/_ViewStart.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Shared/_AdminLayout.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-d9r58ntgl6
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Shared/_Layout.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xwsj50v0pi
 
-[C:/Users/micha/Documents/Universidad Fidélitas - Archivos/7mo Cuatrimestre/Programacion Avanzada/verduleria/Verduleria/Views/Shared/_LayoutCheckout.cshtml]
+[D:/Pedro 7.0/Programación Avanzada Web/verduleria/Verduleria/Views/Shared/_LayoutCheckout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDaGVja291dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-qkj0ppiu10

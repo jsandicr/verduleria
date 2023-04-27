@@ -15,5 +15,7 @@ namespace Verduleria.Data
         }
 
         public DbSet<Verduleria.Models.Promocion> Promocion { get; set; } = default!;
+
+        public DbSet<Verduleria.Models.Producto>? Producto { get; set; }
     }
 }
