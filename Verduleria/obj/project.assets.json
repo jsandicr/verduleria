@@ -10583,19 +10583,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pedru\\.nuget\\packages\\": {}
+    "C:\\Users\\jsand\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Pedro 7.0\\Programación Avanzada Web\\verduleria\\Verduleria\\Verduleria.csproj",
+      "projectUniqueName": "D:\\Q7\\Programacion_Web\\Proyecto\\verduleria\\Verduleria\\Verduleria.csproj",
       "projectName": "Verduleria",
-      "projectPath": "D:\\Pedro 7.0\\Programación Avanzada Web\\verduleria\\Verduleria\\Verduleria.csproj",
-      "packagesPath": "C:\\Users\\pedru\\.nuget\\packages\\",
-      "outputPath": "D:\\Pedro 7.0\\Programación Avanzada Web\\verduleria\\Verduleria\\obj\\",
+      "projectPath": "D:\\Q7\\Programacion_Web\\Proyecto\\verduleria\\Verduleria\\Verduleria.csproj",
+      "packagesPath": "C:\\Users\\jsand\\.nuget\\packages\\",
+      "outputPath": "D:\\Q7\\Programacion_Web\\Proyecto\\verduleria\\Verduleria\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pedru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jsand\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10669,7 +10669,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

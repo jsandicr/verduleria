@@ -17,6 +17,12 @@
                             <thead>
                                 <tr>
                                     <th scope="col">
+                                        @Html.DisplayNameFor(model => model.Promocion)
+                                    </th>
+                                    <th scope="col">
+                                        @Html.DisplayNameFor(model => model.Producto)
+                                    </th>
+                                    <th scope="col">
                                         @Html.DisplayNameFor(model => model.ProductoCompra)
                                     </th>
                                     <th scope="col">
@@ -32,13 +38,23 @@
                                 {
                                     <tr>
                                         <td>
+                                            @Html.DisplayFor(modelItem => productopromocion.Promocion.Nombre)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => productopromocion.Producto.Nombre)
+                                        </td>
+                                        <td>
                                             @Html.DisplayFor(modelItem => productopromocion.ProductoCompra)
                                         </td>
                                         <td>
                                             @Html.DisplayFor(modelItem => productopromocion.Cantidad)
                                         </td>
                                         <td>
-                                            @Html.DisplayFor(modelItem => productopromocion.PorcentajeDebita)
+                                            @if(productopromocion.PorcentajeDebita != null){
+                                                @Html.DisplayFor(modelItem => productopromocion.PorcentajeDebita)
+                                            }else{
+                                                <label>0</label>
+                                            }
                                         </td>
                                         <td>
                                             <a asp-action="EditarProductoPromocion" asp-route-id="@productopromocion.Id">Editar</a>

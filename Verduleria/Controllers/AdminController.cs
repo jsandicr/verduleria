@@ -44,7 +44,7 @@ namespace Verduleria.Controllers
             List<ProductoPromocion> promocionList = new List<ProductoPromocion>();
             using (var httpClient = new HttpClient())
             {
-                using (var response = await httpClient.GetAsync("https://localhost:7024/api/Promocion/"))
+                using (var response = await httpClient.GetAsync("https://localhost:7024/api/ProductoPromocion"))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
                     promocionList = JsonConvert.DeserializeObject<List<ProductoPromocion>>(apiResponse);
@@ -393,7 +393,7 @@ namespace Verduleria.Controllers
                     var data = new StringContent(json, Encoding.UTF8, "application/json");
                     using (var httpClient = new HttpClient())
                     {
-                        using (var response = await httpClient.PostAsync("https://localhost:7024/api/Promocion/ProductoxPromocion", data))
+                        using (var response = await httpClient.PostAsync("https://localhost:7024/api/ProductoPromocion", data))
                         {
                             if (response.IsSuccessStatusCode)
                             {
@@ -402,10 +402,7 @@ namespace Verduleria.Controllers
                         }
                     }
                 }
-
                 return RedirectToAction(nameof(AgregarProductoPromocion));
-
-
             }
             catch
             {
@@ -414,7 +411,119 @@ namespace Verduleria.Controllers
         }
 
         //Editar ProductoPromocion
+        public async Task<IActionResult> EditarProductoPromocion(int id)
+        {
+            ProductoPromocion productoPromocion = new ProductoPromocion();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("https://localhost:7024/api/ProductoPromocion/"+id))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string apiResponse = await response.Content.ReadAsStringAsync();
+                        productoPromocion = JsonConvert.DeserializeObject<ProductoPromocion>(apiResponse);
+                    }
+                }
+            }
 
+            List<Producto> productos = new List<Producto>();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("https://localhost:7024/api/Producto"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    productos = JsonConvert.DeserializeObject<List<Producto>>(apiResponse);
+                }
+            }
+
+            List<SelectListItem> productosOps = new List<SelectListItem>();
+            foreach (Producto producto in productos)
+            {
+                if(producto.Id == productoPromocion.IdProducto)
+                {
+                    productosOps.Add(new SelectListItem
+                    {
+                        Selected = true,
+                        Text = producto.Nombre,
+                        Value = producto.Id.ToString()
+                    });
+                }
+                else
+                {
+                    productosOps.Add(new SelectListItem
+                    {
+                        Text = producto.Nombre,
+                        Value = producto.Id.ToString()
+                    });
+                }
+            };
+
+            ViewData["Productos"] = productosOps;
+
+            List<Promocion> promociones = new List<Promocion>();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("https://localhost:7024/api/Promocion"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    promociones = JsonConvert.DeserializeObject<List<Promocion>>(apiResponse);
+                }
+            }
+
+            List<SelectListItem> promocionesOps = new List<SelectListItem>();
+            foreach (Promocion promocion in promociones)
+            {
+                if(promocion.Id == productoPromocion.IdPromocion)
+                {
+                    promocionesOps.Add(new SelectListItem
+                    {
+                        Selected = true,
+                        Text = promocion.Nombre,
+                        Value = promocion.Id.ToString()
+                    }) ;
+                }
+                else
+                {
+                    promocionesOps.Add(new SelectListItem
+                    {
+                        Text = promocion.Nombre,
+                        Value = promocion.Id.ToString()
+                    });
+                }
+            };
+
+            ViewData["Promociones"] = promocionesOps;
+            return View(productoPromocion);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditarProductoPromocion(ProductoPromocion productoPromocion)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var json = JsonConvert.SerializeObject(productoPromocion);
+                    var data = new StringContent(json, Encoding.UTF8, "application/json");
+                    using (var httpClient = new HttpClient())
+                    {
+                        using (var response = await httpClient.PutAsync("https://localhost:7024/api/ProductoPromocion", data))
+                        {
+                            if (response.IsSuccessStatusCode)
+                            {
+                                return RedirectToAction(nameof(ProductoPromocion));
+                            }
+                        }
+                    }
+                }
+                return RedirectToAction(nameof(ProductoPromocion));
+
+            }
+            catch
+            {
+                return RedirectToAction(nameof(ProductoPromocion));
+            }
+        }
 
         //Agregar Roles
 
@@ -438,7 +547,7 @@ namespace Verduleria.Controllers
                         {
                             if (response.IsSuccessStatusCode)
                             {
-                                return RedirectToAction(nameof(Index));
+                                return RedirectToAction(nameof(Rol));
                             }
                         }
                     }
@@ -484,7 +593,7 @@ namespace Verduleria.Controllers
                         {
                             if (response.IsSuccessStatusCode)
                             {
-                                return RedirectToAction(nameof(Index));
+                                return RedirectToAction(nameof(Rol));
                             }
                         }
                     }
@@ -520,7 +629,7 @@ namespace Verduleria.Controllers
                         {
                             if (response.IsSuccessStatusCode)
                             {
-                                return RedirectToAction(nameof(Index));
+                                return RedirectToAction(nameof(TipoProducto));
                             }
                         }
                     }
@@ -541,7 +650,7 @@ namespace Verduleria.Controllers
             TipoProducto tipoProducto = new TipoProducto();
             using (var httpClient = new HttpClient())
             {
-                using (var response = await httpClient.GetAsync("https://localhost:7024/api/Rol/" + id))
+                using (var response = await httpClient.GetAsync("https://localhost:7024/api/TipoProducto/" + id))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
                     tipoProducto = JsonConvert.DeserializeObject<TipoProducto>(apiResponse); //REVISAR NULOS
@@ -566,7 +675,7 @@ namespace Verduleria.Controllers
                         {
                             if (response.IsSuccessStatusCode)
                             {
-                                return RedirectToAction(nameof(Index));
+                                return RedirectToAction(nameof(TipoProducto));
                             }
                         }
                     }
@@ -623,7 +732,7 @@ namespace Verduleria.Controllers
                         {
                             if (response.IsSuccessStatusCode)
                             {
-                                return RedirectToAction(nameof(Index));
+                                return RedirectToAction(nameof(Usuario));
                             }
                         }
                     }
@@ -702,7 +811,7 @@ namespace Verduleria.Controllers
                         {
                             if (response.IsSuccessStatusCode)
                             {
-                                return RedirectToAction(nameof(Index));
+                                return RedirectToAction(nameof(Usuario));
                             }
                         }
                     }
